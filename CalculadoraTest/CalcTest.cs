@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Calculadora;
 
 namespace CalculadoraTest
 {
@@ -19,10 +20,10 @@ namespace CalculadoraTest
             int expected = 7;
 
             // Act
-            int result = Calculadora.Suma(a, b);
+            int result = Calculadora.Calculadora.Suma(a, b);
 
             // Assert
-            Assert.AreEqual(result, expected);
+            Assert.AreEqual(expected, result);
         }
     }
 }
