@@ -11,9 +11,18 @@ namespace CalculadoraTest
     public class CalcTest
     {
         [Test]
-        public void prueba1()
+        public void TestSumaDeEnteros()
         {
-            Assert.Pass();
+            // Arrange
+            int a = 4;
+            int b = 3;
+            int expected = 7;
+
+            // Act
+            int result = Calculadora.Suma(a, b);
+
+            // Assert
+            Assert.AreEqual(result, expected);
         }
     }
 }
